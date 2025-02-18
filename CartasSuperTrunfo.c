@@ -5,24 +5,24 @@
 // Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
 
 int main() {
-    printf("Desafio 'Super trunfo paises':\n" );
-	printf("Bem vindo(a) ao jogo Super Trunfo Paises. Vamos iniciar com a sua Carta 1.\n");
+    printf("Desafio Super trunfo 'países':\n" );
+	printf("Bem vindo(a) ao jogo Super Trunfo Países. Vamos iniciar com a sua Carta 1.\n");
 	
-	//introduzindo as variavis da carta:01
+	//introduzindo as variáveis da carta:01
 	
-	char estado[20];
+	char estado;
 	char codigoDacarta[20];
 	char nomeDacidade[20];
 	int populacao;
 	float area;
 	float pib;
-	int pontos_turisticos;
+	int pontosTuristicos;
 	
-	//Introduzindo as variavis da carta:02
+	//Introduzindo as variáveis da carta:02
 	
-	char estado2[20];
+	char estado2;
 	char codigoDacarta2[20];
-	char nomeDacidade2;
+	char nomeDacidade2[20];
 	int populacao2;
 	float area2;
 	float pib2;
@@ -30,61 +30,55 @@ int main() {
 	
 	//Iniciando a interao com o usurio
 	
-	printf("Insira o nome do estado escolhido para ser sua preimeira carta:\n");
-	scanf("%s", &estado);
+	printf("Insira uma letra de 'A' a 'H' para representar o estado escolhido para sua preimeira carta:\n");
+	scanf("%c", &estado);
 	
-	//intereo aleatria para tornar o jogo mais atrativo
+	//interação aleatória para tornar o jogo mais atrativo
 		printf("Escolha interessante!\n");
 	
-	printf("Escolha o codigo da sua carta A01 ou B01:\n");
+	printf("Escolha o codigo da sua carta. Adicione a letra escolhida a um numero de 01 a 06. Ex 'A01':\n");
 	scanf("%s", &codigoDacarta);
 	
-	//interao 
+	//interação 
 	
 		printf("Boa!\n");
-	
-	//retono
+
 	printf("Agora escolha o nome da cidade, dentro do estado escolhido inicialmente para compor a sua carta 1:\n");
 	scanf("%s", &nomeDacidade);
 	
-	//interao
+	//interação
 		printf("Otima escolha!\n");
 		
 	printf("Qual a populacao dessa cidade?\n");
 	scanf("%d", &populacao);
 	
- 	//interao
+ 	//interação
  		printf("Isso ai!\n");
  		
 	printf("Me conte agora a area total da cidade:\n");
 	scanf("%f", &area);
 	
-	//interao
+	//interação
 		printf("Muito bem!\n");
 		
 	printf("Qual o PIB da cidade?\n");
-	scanf("%f", &pib);
-	
-	//interao
-		printf("Uaaau!\n");
+	scanf("%.3f", &pib);
 	
 	printf("Quantos pontos turisticos tem essa cidade?\n");
-	scanf("%i", pontos_turisticos);
+	scanf("%d", pontosTuristicos);
 	
-	//interao
-		printf("Excelente, chegamos ao final da sua primeira carta. Vamos agora cinfirmar todos os dados da sua carta 1.\n");
-		
-	//Conferindo os dados fornacidos pelo usurio
+
+    
+    //Conferindo os dados fornacidos pelo usurio
+	    printf("\n");
 	
-	printf("\n");
-	
-			printf("Estado: %s\n", estado);
-			printf("Codigo da carta: %s\n", codigoDacarta);
-			printf("Nome da cidade: %s\n", nomeDacidade);
-			printf("Moradores: %d\n", populacao);
-			printf("Area total: %f\n", area);
-			printf("PIB: %f\n", pib);
-			printf("Pontos turisticos: %i\n", pontos_turisticos);
+	printf("Estado: %s\n", estado);
+	printf("Codigo da carta: %s\n", codigoDacarta);
+	printf("Nome da cidade: %s\n", nomeDacidade);
+	printf("Moradores: %d\n", populacao);
+	printf("Area total: %f\n", area);
+	printf("PIB: %f\n", pib);
+	printf("Pontos turisticos: %i\n", pontosTuristicos);
 			
 			
  	printf("Vamos montar a sua carta 2\n");
