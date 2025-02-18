@@ -36,8 +36,6 @@ int main() {
 	//intereo aleatria para tornar o jogo mais atrativo
 		printf("Escolha interessante!\n");
 	
-	//Retorno 
-	
 	printf("Escolha o codigo da sua carta A01 ou B01:\n");
 	scanf("%s", &codigoDacarta);
 	
@@ -52,21 +50,18 @@ int main() {
 	//interao
 		printf("Otima escolha!\n");
 		
-
 	printf("Qual a populacao dessa cidade?\n");
 	scanf("%d", &populacao);
 	
  	//interao
  		printf("Isso ai!\n");
  		
-
 	printf("Me conte agora a area total da cidade:\n");
 	scanf("%f", &area);
 	
 	//interao
 		printf("Muito bem!\n");
 		
-
 	printf("Qual o PIB da cidade?\n");
 	scanf("%f", &pib);
 	
