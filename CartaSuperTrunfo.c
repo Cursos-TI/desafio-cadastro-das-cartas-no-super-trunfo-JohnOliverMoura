@@ -1,0 +1,143 @@
+#include <stdio.h>
+
+// Desafio Super Trunfo - Países
+// Tema 1 - Cadastro das Cartas
+// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
+
+int main() {
+
+printf("Desafio 'Super trunfo paises':\n" );
+printf("Bem vindo(a) ao jogo Super Trunfo Paises. Vamos iniciar com a sua Carta 1.\n");
+
+//Introduzindo as variáveis da carta:01
+
+char estado[20];
+char CodigoDaCarta[20];
+char cidade[20];
+int populacao;
+float area;
+float pib;
+int pontos_turisticos;
+
+//Introduzindo as variáveis da carta:02
+
+char estado_2[20];
+char codigoDacarta_2[20];
+char cidade_2[20];
+int populacao_2;
+float area_2;
+float pib_2;
+int pontosTuristicos_2;
+
+
+    //Interação com usuário, para torna o jogo mais dinâmico e comunicativo.
+    printf("Escolha um estado para iniciarmos o Jogo:\n");
+    scanf("%s", &estado);
+
+    printf("Otima escolha!\n");
+    
+    printf("Agora escolha o código da sua carta, ele deve ser uma letra entre A e H, e um número entre 01 e 06. Exemplo: B03:\n");
+    scanf("%s", &CodigoDaCarta);
+
+        printf("Show!\n");
+    
+    printf("Escolha a cidade. Lembrando que ela deve ser uma cidade que está dentro do Estado escolhido:\n");
+    scanf("%s", &cidade);
+
+        printf("Muito bem:\n");
+    
+    printf("Qual a população dessa cidade?\n");
+    scanf("%d", &populacao);
+
+         printf("Isso ai!\n");
+   
+         printf("Me conte agora a area total da cidade em KM²:\n");
+         scanf("%f", &area);
+     
+             printf("Muito bem!\n");
+         
+ 
+         printf("Qual o PIB da cidade?\n");
+         scanf("%f", &pib);
+     
+             printf("Uaaau!\n");
+     
+         printf("Quantos pontos turisticos tem essa cidade?\n");
+     scanf("%i", &pontos_turisticos);
+         
+ 
+         
+         
+     
+     //Conferindo os dados fornecidos pelo usuário.
+     
+             printf("\n");
+     
+             printf("Estado: %s\n", estado);
+             printf("Código da carta: %s\n", CodigoDaCarta);
+             printf("Cidade: %s\n", cidade);
+             printf("Moradores: %d\n", populacao);
+             printf("Area total: %f\n", area);
+             printf("PIB: %f\n", pib);
+             printf("Pontos turisticos: %i\n", pontos_turisticos);
+             
+             printf("\n");
+             
+              printf("Vamos montar a sua carta 2\n");
+      
+      
+      
+     //Retomando interação 
+         printf("Escolha um novo Estado para sua carta 2:\n");
+         scanf("%s", &estado_2);
+ 
+ 
+             printf("Boa escolha!\n");
+         
+         printf("Agora escolha o código da sua carta 2, lembrando que deve ser uma letra entre A e H, e um número entre 01 e 06. E deve ser diferente da carta 1:\n");
+         scanf("%s", &codigoDacarta_2);
+     
+             printf("Isso ai!\n");
+         
+         printf("Escolha a cidade. Lembrando que ela deve ser uma cidade que está dentro do Estado escolhido:\n");
+         scanf("%s", &cidade_2);
+     
+             printf("Mandou bem:\n");
+         
+         printf("Qual a população dessa cidade?\n");
+         scanf("%d", &populacao_2);
+     
+ 
+         printf("Me conte agora a area total da cidade em KM²:\n");
+         scanf("%.3f", &area_2);
+     
+             printf("Muito bem!\n");
+         
+ 
+         printf("Qual o PIB da cidade?\n");
+         scanf("%.3f", &pib_2);
+     
+             printf("Legal!\n");
+     
+         printf("Quantos pontos turisticos tem essa cidade?\n");
+     scanf("%i", &pontosTuristicos_2);
+         
+    //Conferindo os dados fornecidos pelo usuário.
+     
+             printf("\n");
+     
+             printf("Estado: %s\n", estado_2);
+             printf("Código da carta: %s\n", codigoDacarta_2);
+             printf("Cidade: %s\n", cidade_2);
+             printf("Moradores: %d\n", populacao_2);
+             printf("Area total: %.3f\n", area_2);
+             printf("PIB: %.3f\n", pib_2);
+             printf("Pontos turisticos: %i\n", pontosTuristicos_2);
+             
+     
+     return 0;
+     
+     
+     
+     
+ }
