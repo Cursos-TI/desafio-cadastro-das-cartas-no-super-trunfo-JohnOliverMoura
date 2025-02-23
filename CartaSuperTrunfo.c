@@ -66,22 +66,6 @@ int pontosTuristicos_2;
      scanf("%i", &pontos_turisticos);
          
  
-         
-         
-     
-     //Conferindo os dados fornecidos pelo usuário.
-     
-             printf("\n");
-     
-             printf("Estado: %s\n", estado);
-             printf("Código da carta: %s\n", CodigoDaCarta);
-             printf("Cidade: %s\n", cidade);
-             printf("Moradores: %d\n", populacao);
-             printf("Area total: %f\n", area);
-             printf("PIB: %f\n", pib);
-             printf("Pontos turisticos: %i\n", pontos_turisticos);
-             
-             printf("\n");
              
               printf("Vamos montar a sua carta 2\n");
       
@@ -121,8 +105,28 @@ int pontosTuristicos_2;
      
          printf("Quantos pontos turisticos tem essa cidade?\n");
      scanf("%i", &pontosTuristicos_2);
-         
-    //Conferindo os dados fornecidos pelo usuário.
+    
+     
+     //Conferindo os dados fornecidos pelo usuário Carta01.
+     
+
+            printf("\n");
+            printf("Vamos conferir os dados. Carta 01\n");
+     
+            printf("Estado: %s\n", estado);
+            printf("Código da carta: %s\n", CodigoDaCarta);
+            printf("Cidade: %s\n", cidade);
+            printf("Moradores: %d\n", populacao);
+            printf("Area total: %f\n", area);
+            printf("PIB: %f\n", pib);
+            printf("Pontos turisticos: %i\n", pontos_turisticos);
+     
+            printf("\n");
+     
+      printf("Dados da carta 02\n");
+
+
+    //Conferindo os dados fornecidos pelo usuário Carta02.
      
              printf("\n");
      
