@@ -104,7 +104,7 @@ int pontosTuristicos_2;
              printf("Legal!\n");
      
          printf("Quantos pontos turisticos tem essa cidade?\n");
-     scanf("%i", &pontosTuristicos_2);
+         scanf("%i", &pontosTuristicos_2);
     
      
      //Conferindo os dados fornecidos pelo usuário Carta01.
