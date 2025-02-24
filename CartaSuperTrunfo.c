@@ -93,13 +93,13 @@ int pontosTuristicos_2;
      
  
          printf("Me conte agora a area total da cidade em KM²:\n");
-         scanf("%.3f", &area_2);
+         scanf("%f", &area_2);
      
              printf("Muito bem!\n");
          
  
          printf("Qual o PIB da cidade?\n");
-         scanf("%.3f", &pib_2);
+         scanf("%f", &pib_2);
      
              printf("Legal!\n");
      
@@ -134,8 +134,8 @@ int pontosTuristicos_2;
              printf("Código da carta: %s\n", codigoDacarta_2);
              printf("Cidade: %s\n", cidade_2);
              printf("Moradores: %d\n", populacao_2);
-             printf("Area total: %.3f\n", area_2);
-             printf("PIB: %.3f\n", pib_2);
+             printf("Area total: %f\n", area_2);
+             printf("PIB: %f\n", pib_2);
              printf("Pontos turisticos: %i\n", pontosTuristicos_2);
              
      
