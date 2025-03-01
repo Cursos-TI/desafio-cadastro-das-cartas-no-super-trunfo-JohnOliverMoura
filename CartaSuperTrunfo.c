@@ -114,7 +114,8 @@ float pibPercapita_2;
          printf("Quantos pontos turisticos tem essa cidade?\n");
          scanf("%i", &pontosTuristicos_2);
 
-     //Calculando os dados da Densidade populacional e o PIB per Capita da carta 01
+     
+    //Calculando os dados da Densidade populacional e o PIB per Capita da carta 02
      desidadePopulacional_2 = (float)populacao_2 / area_2;
      pibPercapita_2 = (float)pib_2 / populacao_2;
          
