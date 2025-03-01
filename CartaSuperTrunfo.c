@@ -68,6 +68,10 @@ float pibPercapita_2;
      
          printf("Quantos pontos turisticos tem essa cidade?\n");
      scanf("%i", &pontos_turisticos);
+
+     //Calculando os dados da Densidade populacional e o PIB per Capita da carta 01
+     desidadePopulacional = (float)populacao / area;
+     pibPercapita = (float)pib / populacao;
          
  
              
@@ -109,6 +113,11 @@ float pibPercapita_2;
      
          printf("Quantos pontos turisticos tem essa cidade?\n");
          scanf("%i", &pontosTuristicos_2);
+
+     //Calculando os dados da Densidade populacional e o PIB per Capita da carta 01
+     desidadePopulacional_2 = (float)populacao_2 / area_2;
+     pibPercapita_2 = (float)pib_2 / populacao_2;
+         
     
      
      //Conferindo os dados fornecidos pelo usuário Carta01.
@@ -124,6 +133,8 @@ float pibPercapita_2;
             printf("Area total: %f\n", area);
             printf("PIB: %f\n", pib);
             printf("Pontos turisticos: %i\n", pontos_turisticos);
+            printf("Densidade populacional: %.2f\n", desidadePopulacional);
+            printf("PIB per Capita: %.2f\n", pibPercapita);
      
             printf("\n");
      
@@ -141,6 +152,9 @@ float pibPercapita_2;
              printf("Area total: %f\n", area_2);
              printf("PIB: %f\n", pib_2);
              printf("Pontos turisticos: %i\n", pontosTuristicos_2);
+             printf("Densidade populacional: %.2f\n", desidadePopulacional_2);
+             printf("PIB per Capita: %.2f\n", pibPercapita_2);
+
              
      
      return 0;
