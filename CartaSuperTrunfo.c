@@ -18,6 +18,8 @@ int populacao;
 float area;
 float pib;
 int pontos_turisticos;
+float desidadePopulacional;
+float pibPercapita;
 
 //Introduzindo as variáveis da carta:02
 
@@ -28,6 +30,8 @@ int populacao_2;
 float area_2;
 float pib_2;
 int pontosTuristicos_2;
+float desidadePopulacional_2;
+float pibPercapita_2;
 
 
     //Interação com usuário, para torna o jogo mais dinâmico e comunicativo.
