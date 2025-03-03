@@ -24,7 +24,7 @@ double superpoder;
 
 
 float densidadeinvertida;
-int resultado, resultado2;
+
 
 //Introduzindo as variáveis da carta:02
 
@@ -41,7 +41,7 @@ double superpoder_2;
 
 
 float densidadeinvertida_2;
-int resultado, resultado2;
+int resultado;
 
 
     //Interação com usuário, para torna o jogo mais dinâmico e comunicativo.
@@ -180,9 +180,14 @@ int resultado, resultado2;
              printf("Densidade populacional: %.2f\n", desidadePopulacional_2);
              printf("PIB per Capita: %.2f\n", pibPercapita_2);
 
+
+        printf("\n");     
        //Comparando as cartas e determinando o vencedor 
              
 printf("Agora iremos fazer o comparativo entre as cartas 01 e 02. Se o resultado maior for 1 a carta1 vence mas se o maior numero de resultado for 0 a carta2 vence\n");
+
+        printf("\n");
+
         printf("carta 1 População total vs Carta 2 População: Ganhador é %d \n", resultado);
         printf("carta 1 Área total vs Carta 2 Área: Ganhador é: %d \n", (area > area_2));
         printf("carta 1 PIB vs Carta 2 PIB: Ganhador é: %d \n", (pib > pib_2));
