@@ -143,6 +143,7 @@ int resultado, resultado2;
      
      superpoder_2 = (float)pib + populacao + pibPercapita + area + pontos_turisticos + densidadeinvertida;
 
+     resultado = populacao > populacao_2;
      //Conferindo os dados fornecidos pelo usuário Carta01.
      
 
@@ -181,8 +182,8 @@ int resultado, resultado2;
 
        //Comparando as cartas e determinando o vencedor 
              
-printf("Agora iremos fazer o comparativo entre as cartas 01 e 02. Se o resultado maior for 0 a carta1 vence mas se o maior numero de resultado for 1 a carta2 vence\n");
-        printf("carta 1 População vs Carta 2 População: Ganhador é: %d \n", (populacao > populacao_2));
+printf("Agora iremos fazer o comparativo entre as cartas 01 e 02. Se o resultado maior for 1 a carta1 vence mas se o maior numero de resultado for 0 a carta2 vence\n");
+        printf("carta 1 População total vs Carta 2 População: Ganhador é %d \n", resultado);
         printf("carta 1 Área total vs Carta 2 Área: Ganhador é: %d \n", (area > area_2));
         printf("carta 1 PIB vs Carta 2 PIB: Ganhador é: %d \n", (pib > pib_2));
         printf("carta 1 Pontos Turisticos vs Carta 2 Pontos Turisticos: Ganhador é: %d \n", (pontos_turisticos > pontosTuristicos_2));
