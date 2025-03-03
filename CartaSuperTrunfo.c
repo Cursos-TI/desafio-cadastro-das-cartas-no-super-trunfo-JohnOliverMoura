@@ -14,24 +14,34 @@ printf("Bem vindo(a) ao jogo Super Trunfo Paises. Vamos iniciar com a sua Carta 
 char estado[20];
 char CodigoDaCarta[20];
 char cidade[20];
-int populacao;
+unsigned int populacao;
 float area;
 float pib;
 int pontos_turisticos;
 float desidadePopulacional;
 float pibPercapita;
+double superpoder;
+
+
+float densidadeinvertida;
+int resultado, resultado2;
 
 //Introduzindo as variáveis da carta:02
 
 char estado_2[20];
 char codigoDacarta_2[20];
 char cidade_2[20];
-int populacao_2;
+unsigned int populacao_2;
 float area_2;
 float pib_2;
 int pontosTuristicos_2;
 float desidadePopulacional_2;
 float pibPercapita_2;
+double superpoder_2;
+
+
+float densidadeinvertida_2;
+int resultado, resultado2;
 
 
     //Interação com usuário, para torna o jogo mais dinâmico e comunicativo.
@@ -51,7 +61,7 @@ float pibPercapita_2;
         printf("Muito bem:\n");
     
     printf("Qual a população dessa cidade?\n");
-    scanf("%d", &populacao);
+    scanf("%u", &populacao);
 
          printf("Isso ai!\n");
    
@@ -72,8 +82,16 @@ float pibPercapita_2;
      //Calculando os dados da Densidade populacional e o PIB per Capita da carta 01
      desidadePopulacional = (float)populacao / area;
      pibPercapita = (float)pib / populacao;
-         
- 
+     
+     
+     //atribuindo valor da variavel super poder 
+     densidadeinvertida = 1 / desidadePopulacional;
+     
+     superpoder = (float)pib + populacao + pibPercapita + area + pontos_turisticos + densidadeinvertida;
+     
+     
+     
+
              
               printf("Vamos montar a sua carta 2\n");
       
@@ -120,7 +138,11 @@ float pibPercapita_2;
      pibPercapita_2 = (float)pib_2 / populacao_2;
          
     
+     //atribuindo valor da variavel super poder 
+     densidadeinvertida_2 = 1 / desidadePopulacional;
      
+     superpoder_2 = (float)pib + populacao + pibPercapita + area + pontos_turisticos + densidadeinvertida;
+
      //Conferindo os dados fornecidos pelo usuário Carta01.
      
 
@@ -130,12 +152,13 @@ float pibPercapita_2;
             printf("Estado: %s\n", estado);
             printf("Código da carta: %s\n", CodigoDaCarta);
             printf("Cidade: %s\n", cidade);
-            printf("Moradores: %d\n", populacao);
+            printf("Moradores: %u\n", populacao);
             printf("Area total: %f\n", area);
             printf("PIB: %f\n", pib);
             printf("Pontos turisticos: %i\n", pontos_turisticos);
             printf("Densidade populacional: %.2f\n", desidadePopulacional);
             printf("PIB per Capita: %.2f\n", pibPercapita);
+            printf("Super Poder: %.3f\n", superpoder);
      
             printf("\n");
      
@@ -149,16 +172,28 @@ float pibPercapita_2;
              printf("Estado: %s\n", estado_2);
              printf("Código da carta: %s\n", codigoDacarta_2);
              printf("Cidade: %s\n", cidade_2);
-             printf("Moradores: %d\n", populacao_2);
+             printf("Moradores: %u\n", populacao_2);
              printf("Area total: %f\n", area_2);
              printf("PIB: %f\n", pib_2);
              printf("Pontos turisticos: %i\n", pontosTuristicos_2);
              printf("Densidade populacional: %.2f\n", desidadePopulacional_2);
              printf("PIB per Capita: %.2f\n", pibPercapita_2);
 
+       //Comparando as cartas e determinando o vencedor 
              
+printf("Agora iremos fazer o comparativo entre as cartas 01 e 02. Se o resultado maior for 0 a carta1 vence mas se o maior numero de resultado for 1 a carta2 vence\n");
+        printf("carta 1 População vs Carta 2 População: Ganhador é: %d \n", (populacao > populacao_2));
+        printf("carta 1 Área total vs Carta 2 Área: Ganhador é: %d \n", (area > area_2));
+        printf("carta 1 PIB vs Carta 2 PIB: Ganhador é: %d \n", (pib > pib_2));
+        printf("carta 1 Pontos Turisticos vs Carta 2 Pontos Turisticos: Ganhador é: %d \n", (pontos_turisticos > pontosTuristicos_2));
+        printf("carta 1 Densidade Populacional vs Carta 2 Densidade Populacional: Ganhador é: %d \n", (densidadeinvertida < densidadeinvertida_2));
+        printf("carta 1 PIB per Capita vs Carta 2 PIB per Capita: Ganhador é: %d \n", (pibPercapita > pibPercapita_2));
+        printf("Super poder Carta 1 vs Super poder carta 2: Ganhador é: %d \n", (superpoder > superpoder_2));
      
-     return 0;
+     
+     
+     
+        return 0;
      
      
      
